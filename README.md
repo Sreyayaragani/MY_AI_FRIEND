@@ -8,3 +8,6 @@ VOICE SELECTOR : Choose between male or female voice
 Simple chat like interface
 
 NOTE : This project is for lerning purpose only. The API endpoint requires  key from the providers discord server. 
+
+preview of project:
+![Screenshot](myaifriendscreenshot.png)
