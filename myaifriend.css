@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    height:100vh;
+    background:linear-gradient(135deg,#6a95ff,#a36bff);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.container{
+    text-align:center;
+    color:white;
+}
+
+h1{
+    margin:0;
+    font-size:4rem;
+}
+
+p{
+    margin:5px 0 20px;
+    font-size:2rem;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding: 30px 20px;
+    width: 100vh;
+    margin: 0 auto;
+}
+
+.mic-btn{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    border: none;
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.mic-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px  rgba(0, 242, 254, 0.8);
+}
+
+.chat-box {
+    height: 200px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    text-align: left;
+
+    scrollbar-width: none;
+    
+}
+
+
+.bubble{
+    background: #f1f1f1;
+    border-radius: 12px;
+    padding: 12px;
+    color: #333;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    width: fit-content;
+    max-width: 80%;
+}
+
+
+.user-bubble {
+    background: #e6ffe6;
+    margin-left: auto;
+    
+}
+
+.ai-bubble {
+    background: #e6ffe6;
+    margin-right: auto;
+}
+
+
+
+select{
+    width:100%;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 1.5rem;
+    outline: none;
+    cursor: pointer;
+    
+}
+
+@media(max-width:500px){
+    .card{width:320px;}
+    h1{font-size:2.5rem;}
+    p{font-size: 1.1rem;}
+    .mic-btn{width: 80px;height: 80px;font-size: 2rem;}
+    .bubble{font-size: 0.95rem;}
+    select{font-size: 1rem;}
+}
+
+@media(max-width:900px) and (min-width :501px){
+    .card{width:400px;}
+    h1{font-size:2.5rem;}
+    p{font-size: 1.1rem;}
+    .mic-btn{width: 80px;height: 80px;font-size: 2rem;}
+    .bubble{font-size: 0.95rem;}
+    select{font-size: 1rem;}
+}
